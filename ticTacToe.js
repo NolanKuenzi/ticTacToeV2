@@ -236,13 +236,4 @@ function gameOver(arr) {
 
 
 
-/*
-        else if (board[4].innerHTML === "" && boardTest.length < 8) {
-            board[4].innerHTML = computer;
-            compBoardArr.push(parseInt(board[4]).id);
-            return;
-        }
-        */
-
-
 
