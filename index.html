@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link  href="main.css" type="text/css" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" /> 
+
+	<title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+	<div id="navBarTop">
+        <nav class="navbar navbar-fixed-top navbar-custom" id="header">
+            <span> 
+                <h3>Tic-Tac-Toe</h3>
+            </span>
+         </nav>
+    </div>
+
+    <div id="startGame">
+        <p>Would you like to play with X's or O's?</p>
+        <input name="X" type="button" class="startButtons" id="X" value="X" onclick="xFunc()"/>
+        <input name="O" type="button" class="startButtons" id="O" value="O" onclick="oFunc()" />
+    </div>
+
+   <div id="bodyDiv">
+    
+    <div id="gameboard">
+    	<table>
+            <tr>
+              <td name="0" class= "board" id="0" /></td>
+              <td name="1" class= "board verticalCent" id="1" /></td>
+              <td name="2" class= "board" id="2" /></td>
+            </tr>
+            <tr>
+              <td name="3" class= "board horizontalCent" id="3" /></td>
+              <td name="4" class= "board verticalCent horizontalCent t4" id="4" /></td>
+              <td name="5" class= "board horizontalCent" id="5" /></td>
+            </tr>
+            <tr>
+              <td name="6" class= "board" id="6" /></td>
+              <td name="7" class= "board verticalCent" id="7" /></td>
+              <td name="8" class= "board" id="8" /></td>
+        </table>
+    </div>
+
+    <div id="endGame">
+    </div>
+      
+      <div id="score">
+        <h4>Player</h4>
+        <input name="playerVal" type="input" class="scoreInputs" id="playerVal" value="0" />
+        <h4>Computer</h4>
+        <input name="computerVal" type="input" class="scoreInputs" id="computerVal" value="0" />
+        <h4>Draws</h4>
+        <input name="drawsVal" type="input" class="scoreInputs" id="drawsVal" value="0" />
+    </div>
+
+    <div id="new">
+        <input name="newGame" type="button" id="newGame" value="New Game" onclick="resetFunc()">
+    </div> 
+
+    </div>
+    <footer>
+        <div>
+            <nav class="navbar navbar-custon navbar-fixed-bottom" id="navBarBottom">
+                <span> 
+                    Copyright © 2018 Nolan Kuenzi. Made for the freeCodeCamp Development Challenge: Build a Tic Tac Toe Game.
+                </span>
+            </nav>
+        </div>
+</footer>    
+	<script type="text/javascript" src="ticTacToe.js"></script>
+</body>
+</html>
