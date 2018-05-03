@@ -1,0 +1,6 @@
+# OSX folder attributes
+.DS_Store
+
+# temporary files
+*.tmp
+*~
