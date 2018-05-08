@@ -112,69 +112,42 @@ function compSpace(square) {
 }
 
 function compOpenSpace() {
-    let boardTest = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-    boardTest.filter(ele => board[ele].innerHTML !== computer);
     if (combCheck.length === 0) {
-        let diagonals = [0, 2, 6, 8];
-        let horizontals = [1, 3, 5, 7];
-        let horizonArr = horizontals.slice(0);
-        diagonals = diagonals.filter(ele => board[ele].innerHTML !== player);
-        horizontals = horizontals.filter(ele => board[ele].innerHTML !== player);
-        if (board[4].innerHTML === player && board[0].innerHTML === "") {
-            board[0].innerHTML = computer;
-            compBoardArr.push(parseInt(board[0].id));
-            return;
-        }
-        else if (diagonals.length === 3 && board[4].innerHTML === "") {
-            board[4].innerHTML = computer;
-            compBoardArr.push(parseInt(board[4].id));
-            return;
-        } else if (horizontals.length === 3) {
-            for (let i = 0; i < horizonArr.length; i++) {
-                if (horizontals.indexOf(horizonArr[i]) === -1) {
-                    if (horizonArr[i] === 1 || horizonArr[i] === 3 && board[0].innerHTML === "") {
-                        board[0].innerHTML = computer;
-                        compBoardArr.push(parseInt(board[0].id));
-                        return;
-                    } else if (horizonArr[i] === 5 && board[2].innerHTML === "") {
-                        board[2].innerHTML = computer;
-                        compBoardArr.push(parseInt(board[2].id));
-                        return;
-                    } else if (horizonArr[i] === 7 && board[1].innerHTML === ""){
-                        board[1].innerHTML = computer;
-                        compBoardArr.push(parseInt(board[1]).id);
-                        return;
-                    }
-                }
-            }
-        } else { 
+        const boardArr = [0, 1, 2, 3, 4, 5, 6, 7, 8];
+        const rand = Math.floor(Math.random() * 8);
+        const randSpace = boardArr[rand];
+
+        if (board[randSpace].innerHTML === "") {
+            board[randSpace].innerHTML = computer;
+            compBoardArr.push(parseInt(randSpace));
+            return;      
+        } else {
             for (let i = 0; i < board.length; i++) {
                 if (board[i].innerHTML === "") {
                     board[i].innerHTML = computer;
                     compBoardArr.push(parseInt(board[i].id));
-                    console.log("goteee");
                     return;
-                } 
+                }
             }
-        } 
+        }
     }
-    let plrTest = false;
-    let testArr = [];
+    let openSpaceTest;
     for (let i = 0; i < combCheck[0].length; i++) {
+        if (board[combCheck[0][i]].innerHTML === computer) {
+            openSpaceTest = true;
+        }
         if (board[combCheck[0][i]].innerHTML === player) {
-            plrTest = true;
+            openSpaceTest = false;
         }
     }
-    for (let i = 0; i < combCheck[0].length; i++) {
-        if (board[combCheck[0][i]].innerHTML === computer && plrTest === true) {
-            testArr = combCheck[0].slice(0);
-            console.log(testArr);
-        }
-    }
-    for (let i = 0; i < testArr.length; i++) {
-        if (board[testArr[i]].innerHTML === "" && testArr.length === 3) {
-            board[testArr[i]].innerHTML = computer;
-            compBoardArr.push(parseInt(testArr[i]));
+    if (openSpaceTest === true) {
+        if (board[combCheck[0][0]].innerHTML === computer || board[combCheck[0][2]].innerHTML === computer) {
+            board[combCheck[0][1]].innerHTML = computer;
+            compBoardArr.push(parseInt(combCheck[0][1]));
+            return;
+        } else if (board[combCheck[0][1]].innerHTML === computer) {
+            board[combCheck[0][0]].innerHTML = computer;
+            compBoardArr.push(parseInt(combCheck[0][0]));
             return;
         }
     }
