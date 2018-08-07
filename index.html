@@ -2,19 +2,14 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-    <link  href="main.css" type="text/css" rel="stylesheet" />
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet" /> 
+    <link  href="./src/main.css" type="text/css" rel="stylesheet" />
 
 	<title>Tic-Tac-Toe</title>
 </head>
 
 <body>
-	<div id="navBarTop">
-        <nav class="navbar navbar-fixed-top navbar-custom" id="header">
-            <span> 
-                <h3>Tic-Tac-Toe</h3>
-            </span>
-         </nav>
+	<div id="header">
+          <h2>Tic-Tac-Toe</h2>
     </div>
     
 <div id="bodyDiv">
@@ -28,14 +23,14 @@
     <div id="gameboard">
     	<table>
             <tr>
-              <td name="0" class= "board" id="0" /></td>
-              <td name="1" class= "board verticalCent" id="1" /></td>
-              <td name="2" class= "board" id="2" /></td>
+              <td name="0" class= "board topRow" id="0" /></td>
+              <td name="1" class= "board topRow verticalCent" id="1" /></td>
+              <td name="2" class= "board topRow" id="2" /></td>
             </tr>
             <tr>
               <td name="3" class= "board horizontalCent" id="3" /></td>
               <td name="4" class= "board verticalCent horizontalCent t4" id="4" /></td>
-              <td name="5" class= "board horizontalCent" id="5" /></td>
+              <td name="5" class= "board horizontalCent t5" id="5" /></td>
             </tr>
             <tr>
               <td name="6" class= "board" id="6" /></td>
@@ -48,12 +43,22 @@
     </div>
      
       <div id="score">
+    
+      <div id="scoreDiv">
         <h4>Player</h4>
         <input name="playerVal" type="input" class="scoreInputs" id="playerVal" value="0" />
+      </div>
+    
+      <div id="scoreDiv">
         <h4>Computer</h4>
         <input name="computerVal" type="input" class="scoreInputs" id="computerVal" value="0" />
+      </div>
+    
+       <div id="scoreDiv">
         <h4>Draws</h4>
         <input name="drawsVal" type="input" class="scoreInputs" id="drawsVal" value="0" />
+      </div>
+    
     </div>
 
     <div id="new">
@@ -70,6 +75,6 @@
             </nav>
         </div>
 </footer>    
-	<script type="text/javascript" src="ticTacToe.js"></script>
+	<script type="text/javascript" src="./public/index.js"></script>
 </body>
 </html>

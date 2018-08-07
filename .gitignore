@@ -1,6 +1,10 @@
-# OSX folder attributes
-.DS_Store
+# dependencies
+/node_modules
 
 # temporary files
 *.tmp
 *~
+
+# misc
+.DS_Store
+npm-debug.log*

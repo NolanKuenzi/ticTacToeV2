@@ -1,6 +1,12 @@
 body {
 	background-color: black !important; 
-/* background-color: teal !important; */
+}
+
+#header {
+    color: white;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: underline;
 }
 
 h3 {
@@ -16,7 +22,7 @@ h3 {
     z-index: 2;
     width: 20em;
 	position: absolute; 
-    top: 20em;
+    top: 16.5em;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -26,7 +32,7 @@ h3 {
 
 #gameboard {
     position: absolute; 
-    top: 10em;
+    top: 6em;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
@@ -39,30 +45,28 @@ td {
 	color: white;
 	font-size: 1em;
 	text-align: center;
-
 }
 
 td:hover {
 	cursor: pointer;
 }
 
+.topRow {
+    border-top: none;
+}
+
 .verticalCent {
-	border-top: .2em solid black;
 	border-right: .2em solid white;
 	border-left: .2em solid white;
-
-
 }
 
 .horizontalCent {
-	border-left: .2em solid black;
 	border-top: .2em solid white;
 	border-bottom: .2em solid white;
-
 }
 
 .t4 {
-	border: .2em solid white;
+	border: .2em solid;
 }
 
 #endGame {
@@ -72,7 +76,7 @@ td:hover {
 	position: absolute;
 	text-align: center;
     width: 22em;
-    top: 21em;
+    top: 18.1em;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -80,12 +84,18 @@ td:hover {
 }
 
 #score {
-    position: absolute; 
-    top: 35em;
+    position: absolute;
+    top: 34em;
     left: 50%;
     text-align: center;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+#scoreDiv {
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 .scoreInputs {	
@@ -102,7 +112,7 @@ h4 {
 
 #new {
     position: absolute; 
-    top: 50em;
+    top: 41em;
     left: 50%;
     text-align: center;
     -webkit-transform: translateX(-50%);
@@ -110,6 +120,8 @@ h4 {
 }
 
 footer {
+    position: relative;
+    top: 100em;
 	text-align: center;
 	color: white;
 }
