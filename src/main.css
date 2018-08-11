@@ -1,5 +1,6 @@
+
 body {
-	background-color: black !important; 
+	background-color: black !important;
 }
 
 #header {
@@ -10,8 +11,7 @@ body {
 }
 
 h3 {
-
-	text-align: center;
+    text-align: center;
 	color: white !important;
 	text-decoration: underline;
 }
@@ -92,7 +92,7 @@ td:hover {
     transform: translateX(-50%);
 }
 
-#scoreDiv {
+.scoreDiv {
     display: inline-block;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -119,9 +119,10 @@ h4 {
     transform: translateX(-50%);
 }
 
-footer {
-    position: relative;
-    top: 100em;
+#footer {
+    position: absolute;
+    top: 48em;
+    width: 100%;
 	text-align: center;
 	color: white;
 }
