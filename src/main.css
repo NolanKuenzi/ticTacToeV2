@@ -1,6 +1,15 @@
+html {
+    height: 100%;
+}
 
 body {
 	background-color: black !important;
+    height: 100%;
+}
+
+#container {
+    position: relative;
+    min-height: 100%;
 }
 
 #header {
@@ -8,6 +17,11 @@ body {
     overflow: hidden;
     text-align: center;
     text-decoration: underline;
+} 
+
+#bodyDiv {
+    min-height: 100%;
+    padding-bottom: 45em;
 }
 
 h3 {
@@ -120,8 +134,8 @@ h4 {
 }
 
 #footer {
-    position: absolute;
-    top: 48em;
+    margin-top: -2em;
+    position: relative;
     width: 100%;
 	text-align: center;
 	color: white;
