@@ -134,9 +134,13 @@ h4 {
 }
 
 #footer {
-    margin-top: -2em;
+    margin-top: -4em;
     position: relative;
     width: 100%;
 	text-align: center;
 	color: white;
+}
+
+#footerText {
+    text-decoration: none;
 }
