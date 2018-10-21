@@ -1,146 +1,146 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-	background-color: black !important;
-    height: 100%;
+  background-color: black !important;
+  height: 100%;
 }
 
 #container {
-    position: relative;
-    min-height: 100%;
+  position: relative;
+  min-height: 100%;
 }
 
 #header {
-    color: white;
-    overflow: hidden;
-    text-align: center;
-    text-decoration: underline;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: underline;
 } 
 
 #bodyDiv {
-    min-height: 100%;
-    padding-bottom: 45em;
+  min-height: 100%;
+  padding-bottom: 45em;
 }
 
 h3 {
-    text-align: center;
-	color: white !important;
-	text-decoration: underline;
+  text-align: center;
+  color: white !important;
+  text-decoration: underline;
 }
 
 #startGame {
-    color: black;
-    background-color: white;
-    z-index: 2;
-    width: 20em;
-	position: absolute; 
-    top: 16.5em;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-	border-radius: 1em;
-	text-align: center; 
+  color: black;
+  background-color: white;
+  z-index: 2;
+  width: 20em;
+  position: absolute; 
+  top: 16.5em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 1em;
+  text-align: center; 
 }
 
 #gameboard {
-    position: absolute; 
-    top: 6em;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
-    color: white;
+  position: absolute; 
+  top: 6em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+  color: white;
 }
 
 td {
-	height: 8em;
-	width: 8em;
-	color: white;
-	font-size: 1em;
-	text-align: center;
+  height: 8em;
+  width: 8em;
+  color: white;
+  font-size: 1em;
+  text-align: center;
 }
 
 td:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .topRow {
-    border-top: none;
+  border-top: none;
 }
 
 .verticalCent {
-	border-right: .2em solid white;
-	border-left: .2em solid white;
+  border-right: .2em solid white;
+  border-left: .2em solid white;
 }
 
 .horizontalCent {
-	border-top: .2em solid white;
-	border-bottom: .2em solid white;
+  border-top: .2em solid white;
+  border-bottom: .2em solid white;
 }
 
 .t4 {
-	border: .2em solid;
+  border: .2em solid;
 }
 
 #endGame {
-    z-index: 2;
-    color: black;
-    background-color: white;
-	position: absolute;
-	text-align: center;
-    width: 22em;
-    top: 18.1em;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-	border-radius: 1em;
+  z-index: 2;
+  color: black;
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  width: 22em;
+  top: 18.1em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 1em;
 }
 
 #score {
-    position: absolute;
-    top: 34em;
-    left: 50%;
-    text-align: center;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+  position: absolute;
+  top: 34em;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .scoreDiv {
-    display: inline-block;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+  display: inline-block;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 .scoreInputs {	
-	width: 1.8em;
-	text-align: center;
-	margin-bottom: .3em;
+  width: 1.8em;
+  text-align: center;
+  margin-bottom: .3em;
 }
 
 h4 {
-	color: white !important;
-	font-size: .9em !important;
-	text-decoration: underline;
+  color: white !important;
+  font-size: .9em !important;
+  text-decoration: underline;
 }
 
 #new {
-    position: absolute; 
-    top: 41em;
-    left: 50%;
-    text-align: center;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+  position: absolute; 
+  top: 41em;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 #footer {
-    margin-top: -4em;
-    position: relative;
-    width: 100%;
-	text-align: center;
-	color: white;
+  margin-top: -4em;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 #footerText {
-    text-decoration: none;
+  text-decoration: none;
 }

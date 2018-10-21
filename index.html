@@ -1,74 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-    <link  href="./src/main.css" type="text/css" rel="stylesheet" />
-
-	<title>Tic-Tac-Toe</title>
+  <meta charset="UTF-8">
+  <link  href="./src/main.css" type="text/css" rel="stylesheet" />
+  <title>Tic-Tac-Toe</title>
 </head>
 
 <body>
-  <div id="container">
+<div id="container">
   <div id="header">
-          <h2>Tic-Tac-Toe</h2>
-    </div>
-    
-    <div id="bodyDiv">    
+    <h2>Tic-Tac-Toe</h2>
+  </div>
+
+  <div id="bodyDiv">    
     <div id="startGame">
-        <p>Would you like to play with X's or O's?</p>
-        <input name="X" type="button" class="startButtons" id="X" value="X" onclick="xFunc()"/>
-        <input name="O" type="button" class="startButtons" id="O" value="O" onclick="oFunc()" />
+      <p>Would you like to play with X's or O's?</p>
+      <input name="X" type="button" class="startButtons" id="X" value="X" onclick="xFunc()"/>
+      <input name="O" type="button" class="startButtons" id="O" value="O" onclick="oFunc()" />
     </div>
 
-    <div id="gameboard">
-    	<table>
-            <tr>
-              <td name="0" class= "board topRow" id="0" /></td>
-              <td name="1" class= "board topRow verticalCent" id="1" /></td>
-              <td name="2" class= "board topRow" id="2" /></td>
-            </tr>
-            <tr>
-              <td name="3" class= "board horizontalCent" id="3" /></td>
-              <td name="4" class= "board verticalCent horizontalCent t4" id="4" /></td>
-              <td name="5" class= "board horizontalCent t5" id="5" /></td>
-            </tr>
-            <tr>
-              <td name="6" class= "board" id="6" /></td>
-              <td name="7" class= "board verticalCent" id="7" /></td>
-              <td name="8" class= "board" id="8" /></td>
-        </table>
-    </div>
+  <div id="gameboard">
+    <table>
+      <tr>
+        <td name="0" class= "board topRow" id="0" /></td>
+        <td name="1" class= "board topRow verticalCent" id="1" /></td>
+        <td name="2" class= "board topRow" id="2" /></td>
+      </tr>
+      <tr>
+        <td name="3" class= "board horizontalCent" id="3" /></td>
+        <td name="4" class= "board verticalCent horizontalCent t4" id="4" /></td>
+        <td name="5" class= "board horizontalCent t5" id="5" /></td>
+      </tr>
+      <tr>
+        <td name="6" class= "board" id="6" /></td>
+        <td name="7" class= "board verticalCent" id="7" /></td>
+        <td name="8" class= "board" id="8" /></td>
+    </table>
+  </div>
 
-    <div id="endGame">
-    </div>
+  <div id="endGame">
+  </div>
      
-      <div id="score">
+  <div id="score">
     
-      <div class="scoreDiv">
-        <h4>Player</h4>
+    <div class="scoreDiv">
+      <h4>Player</h4>
         <input name="playerVal" type="input" class="scoreInputs" id="playerVal" value="0" />
-      </div>
-    
-      <div class="scoreDiv">
-        <h4>Computer</h4>
-        <input name="computerVal" type="input" class="scoreInputs" id="computerVal" value="0" />
-      </div>
-    
-       <div class="scoreDiv">
-        <h4>Draws</h4>
-        <input name="drawsVal" type="input" class="scoreInputs" id="drawsVal" value="0" />
-      </div>
-    
     </div>
+    
+    <div class="scoreDiv">
+      <h4>Computer</h4>
+      <input name="computerVal" type="input" class="scoreInputs" id="computerVal" value="0" />
+    </div>
+    
+    <div class="scoreDiv">
+      <h4>Draws</h4>
+      <input name="drawsVal" type="input" class="scoreInputs" id="drawsVal" value="0" />
+   </div>
+    
+  </div>
 
-    <div id="new">
-        <input name="newGame" type="button" id="newGame" value="New Game" onclick="resetFunc()">
-    </div> 
-</div>
+  <div id="new">
+    <input name="newGame" type="button" id="newGame" value="New Game" onclick="resetFunc()">
+  </div> 
+  </div>
 </div>  
-       <div id="footer">
-          <h4 id="footerText">Copyright © 2018 Nolan Kuenzi. Made for the freeCodeCamp Development Challenge: Build a Tic Tac Toe Game.</h4>
-        </div>  
-	<script type="text/javascript" src="./public/index.js"></script>
+    <div id="footer">
+      <h4 id="footerText">Copyright © 2018 Nolan Kuenzi. Made for the freeCodeCamp Development Challenge: Build a Tic Tac Toe Game.</h4>
+    </div>  
+  <script type="text/javascript" src="./public/index.js"></script>
 </body>
 </html>
