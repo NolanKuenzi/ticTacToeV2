@@ -1,11 +1,11 @@
 {
-  "name": "ticTacToeV2",
+  "name": "tic_tac_toe_v2",
   "version": "1.0.0",
   "description": "===Build a Tic Tac Toe Game===",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "build": "babel src -d public"
+    "build": "babel src -d public"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,10 @@
     "url": "https://github.com/NolanKuenzi/ticTacToeV2/issues"
   },
   "homepage": "https://github.com/NolanKuenzi/ticTacToeV2#readme",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+  "devDependencies": {},
+  "dependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
   }
 }
